@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from typing import List
 import logging
-from app_task2.schemas.author import CreateAuthor, UpdateAuthor, AuthorResponse
-from app_task2.services.author import AuthorService
-from app_task2.database import get_database
+from schemas.author import CreateAuthor, UpdateAuthor, AuthorResponse
+from services.author import AuthorService
+from database import get_database
 
 author_router = APIRouter(tags=['Authors'])
 logger = logging.getLogger(__name__)

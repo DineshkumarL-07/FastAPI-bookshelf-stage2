@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from typing import List
 import logging
-from app_task2.schemas.reviews import CreateReview, UpdateReview, ReviewResponse
-from app_task2.services.reviews import ReviewService
-from app_task2.database import get_database
+from schemas.reviews import CreateReview, UpdateReview, ReviewResponse
+from services.reviews import ReviewService
+from database import get_database
 
 review_router = APIRouter(tags=['Reviews'])
 logger = logging.getLogger(__name__)

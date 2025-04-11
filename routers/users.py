@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status, Path
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from typing import List
 import logging
-from app_task2.schemas.user import CreateUser, UserResponse, UpdateUser
-from app_task2.database import get_database
-from app_task2.services.user import UserService
+from schemas.user import CreateUser, UserResponse, UpdateUser
+from database import get_database
+from services.user import UserService
 
 user_router = APIRouter(tags = ['Users'])
 logger = logging.getLogger(__name__)

@@ -2,9 +2,9 @@ from bson.objectid import ObjectId
 from bson.errors import InvalidId
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
-from app_task2.models.publisher import Publisher
-from app_task2.schemas.publisher import CreatePublisher, UpdatePublisher, PublisherResponse
-# from app_task2.services import BaseService
+from models.publisher import Publisher
+from schemas.publisher import CreatePublisher, UpdatePublisher, PublisherResponse
+# from services import BaseService
 from datetime import datetime
 
 class PublisherService():

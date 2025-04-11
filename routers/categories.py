@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from typing import List
 import logging
-from app_task2.schemas.categories import CreateCategory, UpdateCategory, CategoryResponse
-from app_task2.services.categories import CategoryService
-from app_task2.database import get_database
+from schemas.categories import CreateCategory, UpdateCategory, CategoryResponse
+from services.categories import CategoryService
+from database import get_database
 
 categories_router = APIRouter(tags=['Updated_categories'])
 logger = logging.getLogger(__name__)

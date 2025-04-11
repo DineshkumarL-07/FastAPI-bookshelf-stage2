@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from typing import List
 import logging
-from app_task2.schemas.book import BookCreate, BookUpdate, BookResponse
-from app_task2.services.books import BookService
-from app_task2.database import get_database
+from schemas.book import BookCreate, BookUpdate, BookResponse
+from services.books import BookService
+from database import get_database
 
 book_router = APIRouter(tags=['Updated_Books'])
 logger = logging.getLogger(__name__)

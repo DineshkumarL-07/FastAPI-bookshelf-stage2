@@ -2,8 +2,8 @@ from bson.objectid import ObjectId
 from bson.errors import InvalidId
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
-from app_task2.models.bookstore import Bookstore
-from app_task2.schemas.bookstore import CreateBookstore, UpdateBookstore, BookstoreResponse
+from models.bookstore import Bookstore
+from schemas.bookstore import CreateBookstore, UpdateBookstore, BookstoreResponse
 # from app.services import BaseService
 from datetime import datetime
 

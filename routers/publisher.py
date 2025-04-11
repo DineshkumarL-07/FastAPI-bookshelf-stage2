@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from typing import List
 import logging
-from app_task2.schemas.publisher import CreatePublisher, UpdatePublisher, PublisherResponse
-from app_task2.services.publisher import PublisherService
-from app_task2.database import get_database
+from schemas.publisher import CreatePublisher, UpdatePublisher, PublisherResponse
+from services.publisher import PublisherService
+from database import get_database
 
 publisher_router = APIRouter(tags=['Publisher'])
 logger = logging.getLogger(__name__)

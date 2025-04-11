@@ -2,8 +2,8 @@ from bson.objectid import ObjectId
 from bson.errors import InvalidId
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
-from app_task2.models.book import Book
-from app_task2.schemas.book import BookCreate, BookUpdate, BookResponse
+from models.book import Book
+from schemas.book import BookCreate, BookUpdate, BookResponse
 from datetime import datetime
 
 class BookService():

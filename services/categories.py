@@ -2,9 +2,9 @@ from bson.objectid import ObjectId
 from bson.errors import InvalidId
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
-from app_task2.models.categories import Category
-from app_task2.schemas.categories import CreateCategory, UpdateCategory, CategoryResponse
-# from app_task2.services import BaseService
+from models.categories import Category
+from schemas.categories import CreateCategory, UpdateCategory, CategoryResponse
+# from services import BaseService
 from datetime import datetime
 
 class CategoryService():

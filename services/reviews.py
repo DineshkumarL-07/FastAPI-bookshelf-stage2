@@ -3,9 +3,9 @@ from bson.objectid import ObjectId
 from bson.errors import InvalidId
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
-from app_task2.models.reviews import Review
-from app_task2.schemas.reviews import CreateReview, UpdateReview, ReviewResponse
-# from app_task2.services import BaseService
+from models.reviews import Review
+from schemas.reviews import CreateReview, UpdateReview, ReviewResponse
+# from services import BaseService
 from datetime import datetime
 
 class ReviewService():
